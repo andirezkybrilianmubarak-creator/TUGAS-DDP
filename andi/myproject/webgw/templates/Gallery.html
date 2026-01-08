@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container my-5">
+  <h2 class="text-center mb-4 fw-bold">SERTIFIKAT</h2>
+
+  <div class="row g-4">
+    <!-- Image 1 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="gallery-card">
+        <img src="{% static 'images/foto1.jpeg' %}" alt="Foto 1">
+        <div class="overlay">
+          <span>Foto 1</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="gallery-card">
+        <img src="{% static 'images/foto2.jpeg' %}" alt="Foto 2">
+        <div class="overlay">
+          <span>Foto 2</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="gallery-card">
+        <img src="{% static 'images/foto3.jpeg' %}" alt="Foto 3">
+        <div class="overlay">
+          <span>Foto 3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

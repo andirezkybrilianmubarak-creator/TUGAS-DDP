@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+  body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background-attachment: fixed;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: #000;
+  }
+
+  h2, h4, h5 {
+    color: #0b6ac9;
+  }
+
+  .profile-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+  }
+</style>
+
+<div class="container py-5">
+
+  <!-- HEADER -->
+  <div class="text-center mb-5">
+    <img src="../static/images/andi.jpeg" class="profile-img mb-3" alt="Profile">
+    <h2 class="fw-bold">✨ About Me ✨</h2>
+    <p class="text-light">
+      Mahasiswa Teknik Informatika yang tertarik pada Web Development dan Teknologi
+    </p>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- PROFIL SINGKAT -->
+    <div class="col-md-6">
+      <div class="card glass-card shadow h-100">
+        <div class="card-body">
+          <h4>👤 Profil Singkat</h4>
+          <p>
+            Saya adalah mahasiswa STT Terpadu Nurul Fikri jurusan Teknik Informatika.
+            Memiliki minat dalam pengembangan web, pemrograman, dan organisasi kampus.
+          </p>
+          <ul class="list-unstyled">
+            <li><strong>Nama:</strong> Andi rezky brilian mubarak</li>
+            <li><strong>Jurusan:</strong> Teknik Informatika</li>
+            <li><strong>Status:</strong> Mahasiswa Aktif</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PENDIDIKAN -->
+    <div class="col-md-6">
+      <div class="card glass-card shadow h-100">
+        <div class="card-body">
+          <h4>🎓 Riwayat Pendidikan</h4>
+          <table class="table table-bordered table-striped mt-3">
+            <thead>
+              <tr>
+                <th>Tahun</th>
+                <th>Institusi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025 - Sekarang</td>
+                <td>STT Terpadu Nurul Fikri</td>
+              </tr>
+              <tr>
+                <td>2020 - 2025</td>
+                <td>SMA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="col-md-6">
+      <div class="card glass-card shadow h-100">
+        <div class="card-body">
+          <h4>🛠️ Skills</h4>
+
+          <label>HTML & CSS</label>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 80%;">80%</div>
+          </div>
+
+          <label>Bootstrap</label>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-info" style="width: 75%;">75%</div>
+          </div>
+
+          <label>Python</label>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-warning" style="width: 70%;">70%</div>
+          </div>
+
+          <label>Django</label>
+          <div class="progress">
+            <div class="progress-bar bg-primary" style="width: 65%;">65%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORGANISASI -->
+    <div class="col-md-6">
+      <div class="card glass-card shadow h-100">
+        <div class="card-body">
+          <h4>👥 Pengalaman Organisasi</h4>
+          <table class="table table-bordered table-striped mt-3">
+            <thead>
+              <tr>
+                <th>Tahun</th>
+                <th>Organisasi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023</td>
+                <td>Lembaga dakwa kampus</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- KONTAK -->
+    <div class="col-12">
+      <div class="card glass-card shadow">
+        <div class="card-body text-center">
+          <h4>📞 Kontak</h4>
+          <p>Email: <strong>emailkamu@gmail.com</strong></p>
+          <p>Instagram: <strong>ekiyy.y</strong></p>
+          <p>WhatsApp: <strong>0895416229254</strong></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
